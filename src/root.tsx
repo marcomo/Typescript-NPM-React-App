@@ -1,11 +1,13 @@
 import React = require('react');
 import { render } from 'react-dom';
 
+// Components
+import Welcome from './components/welcome';
 
-let rootElement = document.getElementById('app');
+// CSS import
+import './stylesheets/styles.scss';
 
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-
-render(<Welcome name="Marco" />, rootElement);
+render(
+  <Welcome name="Marco" />, 
+  document.getElementById('app')
+);

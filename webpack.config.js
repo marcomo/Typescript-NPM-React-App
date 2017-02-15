@@ -9,6 +9,7 @@ var PROD = process.env.NODE_ENV == "production";
 // Sourcemaps only loaded in 'development'
 
 var cssLoaders = [
+
   'css?sourceMap=' + !PROD, 
   'postcss',
   '!sass?sourceMap='  + !PROD
@@ -21,7 +22,7 @@ var moduleLoaders = [
   },
   {
     test: /\.s?css?$/,
-    loader: ExtractTextPlugin.extract('style', cssLoaders)
+    loader: ExtractTextPlugin.extract('style-loader', cssLoaders)
   },
   {
     test: /\.(ttf|eot|svg|woff(2)?)\??\w*\#*\w*$/,
@@ -74,6 +75,10 @@ module.exports = {
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+
+    new ExtractTextPlugin('styles.[contenthash].css', {
+        allChunks: true
+    }),
 
     new HtmlWebpackPlugin({
         title: 'My React App',

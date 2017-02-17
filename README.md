@@ -36,3 +36,11 @@ These loaders are listed here in order of transformation but appear in the confi
 - `NODE_ENV`: The build environment passed with webpack command as `NODE_ENV=<environment>`,  
   - defaults to `development`
 - `VERSION`: The package.json version number (eg. `0.1.0`)
+
+### ToDos
+
+- [X] Implement a build process
+- [ ] Build some React components (Maybe a notes app with tagging)
+- [ ] Add unit tests
+- [ ] Use localStorage for persiting data
+- [ ] Build and deploy to Github.io page

@@ -1,14 +1,13 @@
 import React = require('react');
 
-interface NameInputProps {
-  handleInput: React.FormEventHandler;
+interface WelcomeProps {
+  handleChange: React.FormEventHandler;
 }
 
-
-function Welcome(props: NameInputProps) {
+function Welcome(props: WelcomeProps) {
   return (
     <div>
-      <input type="text" onInput={props.handleInput} />
+      <input type="text" onChange={props.handleChange} />
     </div>
   );
 }

@@ -18,12 +18,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleNameInput: (e: React.FormEvent) => {
-      dispatch(updateGreeting((e.currentTarget as HTMLInputElement).value));
-    },
-
-    handleGreetButtonClick: () => {
-      console.log("GREET BUTTON CLICK");
+    handleGreetFormSubmit: (greeting: string) => {
+      dispatch(updateGreeting(greeting));
     }
   }
 }

@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/marcomo/My-NPM-React-App#readme",
   "dependencies": {
+    "immutability-helper": "^2.1.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "typescript": "^2.1.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.0",
@@ -38,7 +40,6 @@
     "strip-loader": "^0.1.2",
     "style-loader": "^0.13.1",
     "ts-loader": "^2.0.0",
-    "typescript": "^2.1.5",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }

@@ -9,7 +9,6 @@ var PROD = process.env.NODE_ENV == "production";
 // Sourcemaps only loaded in 'development'
 
 var cssLoaders = [
-
   'css?sourceMap=' + !PROD, 
   'postcss',
   '!sass?sourceMap='  + !PROD
